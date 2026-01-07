@@ -1,0 +1,20 @@
+services:
+  backend:
+    build: ./resort
+    container_name: bharatresort-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./resort:/app
+
+  frontend:
+    build: ./Frontend_Resort
+    container_name: bharatresort-frontend
+    ports:
+      - "5173:5173"
+    # DO NOT mount node_modules; let container handle dependencies
+    volumes:
+      - ./Frontend_Resort:/app:cached
+      - /app/node_modules
+    depends_on:
+      - backend

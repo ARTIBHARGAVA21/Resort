@@ -1,0 +1,61 @@
+# Python bytecode files
+*.pyc
+*.pyo
+*.pyd
+_pycache_/
+*.pytest_cache/
+
+# Django-specific
+*.log
+*.pot
+*.pyc
+*.sqlite3
+db.sqlite3
+/static/
+/media/
+
+# Virtual environment
+venv/
+.env/
+.venv/
+env/
+.envrc
+
+# Django migrations
+/migrations/
+!*/migrations/_init_.py
+
+# Local configuration files
+*.env
+
+# IDE/editor specific
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Mac-specific
+.DS_Store
+
+# Windows-specific
+Thumbs.db
+
+# Package distribution
+*.tar.gz
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Test and coverage reports
+.coverage
+nosetests.xml
+coverage.xml
+*.cover
+*.hypothesis/
+
+# Node.js dependencies (if applicable)
+node_modules/
+
+# Django REST Framework
+*.sqlite3
