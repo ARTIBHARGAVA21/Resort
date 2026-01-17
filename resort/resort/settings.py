@@ -46,8 +46,25 @@ INSTALLED_APPS = [
     
 ]
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",  # Vite dev server
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+
+    # Add your deployed frontend here (example)
+    "http://13.53.37.121",
+    "http://13.53.37.121:5173",
+    # "https://your-frontend-domain.com",
+    # "https://www.your-frontend-domain.com",
 ]
+CSRF_TRUSTED_ORIGINS = [
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "http://13.53.37.121",
+    # "https://your-frontend-domain.com",
+]
+
+CORS_ALLOW_HEADERS = ["*"]
+CORS_ALLOW_METHODS = ["*"]
+CORS_ALLOW_ALL_ORIGINS = True
 
 MIDDLEWARE = [
     
