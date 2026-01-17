@@ -8,8 +8,8 @@ import SafariBooking from "./Components/Resorts/SafariBooking";
 import Error from "./Components/Sections/Error";
 import HotelDetails from "./Utils/HotelDetails";
 import Mainpage from "./Components/Sections/Mainpage";
-import Services from "./Components/Resorts/Service";
-import Contact from "./Components/Resorts/Contact";
+import Services from "./Components/Resorts/service";
+import Contact from "./Components/Resorts/contact";
 import About from "./Components/Resorts/About";
 import Booking from "./Components/Resorts/Booking";
 // import HotelPage from "./Components/Resorts/HotelPage"; // keep if you need separately
